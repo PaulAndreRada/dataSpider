@@ -1,13 +1,23 @@
 
 /* 
- * jQuery Data spiders plugin 0.5 ( proof of concept )
+ * jQuery Data spiders plugin 0.0.1
  * Created by Paul Rada
  * www.github.com/PaulAndreRada
  *
+ * TODO : 
+ * - Update FilterDataFor method to use REGEX
+ * - Encapsulate code into a jQuery method ( allowing the user
+ * to activate the crawlers on any script )
+ * - Create a base method for property extractions
+ * - Expand the crawlers list
+ * - Expand the execute list   
+ *
  */
 
+
 // UTILITY HELPERS
-// quick utility function to extrac elements with a partial data tag
+// quick utility function to extrac elements 
+// with a partial data tag
 $.fn.filterDataFor = function(set) {
     var elems=$([]);
     this.each(function(i,e) {
@@ -226,10 +236,7 @@ $(function($){
 		    return self;
 		};
 		
-
-		// and the list can go on and on...
-
-
+		
 		return self;
 		//
 	    }; // execute
@@ -242,10 +249,6 @@ $(function($){
 	
 	// Activate the spider
 	var spider = DataCrawler();
-	// 
-	// Have the spider crawl only the events 
-	// intended for use 
-	// ( less DOM crawls = happy Browser )
 	spider.crawl.clicks();
 	spider.crawl.hovers();
        
