@@ -3,7 +3,7 @@
 
 <h3> Control basic jQuery methods without touching javascript </h3>
 
-By adding simple data tags you can control jQuery methods to trigger on specific elements using only css style accessors.
+By adding simple data tags you can control jQuery methods to trigger on any element using css style accessors.
 
 <h5> Toggle elements through id </h5> 
 ```
@@ -23,6 +23,7 @@ By adding simple data tags you can control jQuery methods to trigger on specific
 ```
 <a href=“#” data-spider-onMouseOver-fadeIn=“.list”
    	    data-spider-fadeIn-prop-speed="slow" 
+
    	    data-spider-onMouseOut-fadeOut=“.list”
 	    data-spider-fadeOut-prop-speed="200"> 
    show list
