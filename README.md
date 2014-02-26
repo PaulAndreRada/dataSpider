@@ -5,7 +5,7 @@
 
 By adding simple data tags you can control jQuery methods to trigger on specific elements using only css style accessors.
 
-<h5> Toggle elements through ids </h5> 
+<h5> Toggle elements through id </h5> 
 ```
 <a href=“#” data-spider-onClick-toggle=“#list” > 
    toggleList
@@ -19,17 +19,25 @@ By adding simple data tags you can control jQuery methods to trigger on specific
 
 ```
 
-<h5> Combine methods to create detailed effects </h5>
+<h5> Combine methods to create complex effects </h5>
 ```
-<a href=“#” data-spider-onMouseOver-fadeIn=“#list” 
-   data-spider-onMouseOut-fadeOut=“#list”> 
+<a href=“#” data-spider-onMouseOver-fadeIn=“.list”
+   	    data-spider-fadeIn-prop-speed="slow" 
+   	    data-spider-onMouseOut-fadeOut=“.list”
+	    data-spider-fadeOut-prop-speed="200"> 
    show list
 </a>
 
-<ol id=“list”> 
+<ol class=“list”> 
     <li>item</li>
     <li>item</li>
     <li>item</li>
 </ol>
+
+<ul class="other list">
+    </li>item</li>
+    </li>item</li>
+    </li>item</li>
+</ul>
 
 ```
