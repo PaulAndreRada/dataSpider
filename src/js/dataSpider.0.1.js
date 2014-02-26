@@ -1,6 +1,6 @@
 
 /* 
- * jQuery Data spiders plugin 0.0.1
+ * jQuery Data spiders plugin 0.1
  * Created by Paul Rada
  * www.github.com/PaulAndreRada
  *
