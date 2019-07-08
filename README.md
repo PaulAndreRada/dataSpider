@@ -4,11 +4,11 @@ By adding simple data tags you can control jQuery methods to trigger on any elem
 
 Toggle elements through id 
 ```
-<a href=“#” data-spider-onClick-toggle=“#mylist” > 
+<a href=“#” data-spider-onClick-toggle=“#myList” > 
    toggleList
 </a>
 
-<ol id=“mylist”> 
+<ol id=“myList”> 
     <li>item</li>
     <li>item</li>
     <li>item</li>
@@ -18,21 +18,21 @@ Toggle elements through id
 
 Combine methods to create complex effects 
 ```
-<a href=“#” data-spider-onMouseOver-fadeIn=“.list”
+<a href=“#” data-spider-onMouseOver-fadeIn=“.myList”
    	    data-spider-fadeIn-prop-speed="slow" 
 
-   	    data-spider-onMouseOut-fadeOut=“.list”
+   	    data-spider-onMouseOut-fadeOut=“.myOtherList”
 	    data-spider-fadeOut-prop-speed="200"> 
    show list
 </a>
 
-<ol class=“list”> 
+<ol class=“myList”> 
     <li>item</li>
     <li>item</li>
     <li>item</li>
 </ol>
 
-<ul class="other list">
+<ul class="myOtherlist">
     </li>item</li>
     </li>item</li>
     </li>item</li>
