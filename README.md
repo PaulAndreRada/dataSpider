@@ -4,11 +4,11 @@ By adding simple data tags you can control jQuery methods to trigger on any elem
 
 Toggle elements through id 
 ```
-<a href=“#” data-spider-onClick-toggle=“#list” > 
+<a href=“#” data-spider-onClick-toggle=“#mylist” > 
    toggleList
 </a>
 
-<ol id=“list”> 
+<ol id=“mylist”> 
     <li>item</li>
     <li>item</li>
     <li>item</li>
